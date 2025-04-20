@@ -1,12 +1,38 @@
-# React + Vite
+🧙‍♂️ Hogwarts Magical Dashboard – First Edittion
+Overview
+This is a fantasy-themed web dashboard inspired by the magical world of Hogwarts. It combines a rich UI design with dynamic data visualizations and protected user authentication. The project demonstrates frontend/backend integration, routing, chart rendering, and access control—all in a magical setting.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🔒 Backend (Fake API)
+Simulated using Express.
 
-Currently, two official plugins are available:
+Login endpoint: POST /auth
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chart data endpoint: /chart/{chartName}
 
-## Expanding the ESLint configuration
+🎨 Frontend (React + Ant Design)
+Login page with a magical UI theme.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Main dashboard resembles a Hagwarts Map with clickable magical locations 
+
+Clicking each area routes to /chart/:chartName, showing an interactive Plotly.js chart:
+
+Chart types include: Radar, Bar, Line, etc.
+
+Access to charts is restricted to authenticated users only.
+
+ UI/UX Details
+Magical design theme with warm tones (brown, gold, purple).
+
+Fantasy-style fonts and a parchment-like background.
+
+Animated loading spinner 
+
+Smooth page transition animations for immersive user experience.
+
+🛠 Tech Stack
+Frontend: React, React Router, Ant Design, Plotly.js
+
+Backend: Express (for mock API)
+
+Styling: CSS modules / custom fantasy theme
