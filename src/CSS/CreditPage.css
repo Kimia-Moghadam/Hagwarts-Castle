@@ -1,0 +1,147 @@
+.credit-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* تغییر به flex-start برای تراز کردن از بالا */
+    min-height: 100vh; /* تغییر از height به min-height */
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    padding: 20px;
+    overflow: auto; /* اضافه کردن overflow برای جلوگیری از کات شدن */
+  }
+  
+  .credit-content {
+    padding: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(245, 243, 239, 0.8);
+    max-width: 1000px;
+    width: 100%;
+    animation: fadeInCredit 3s ease-in-out;
+  }
+  
+  .credit-title {
+    font-size: 20px;
+    color: #ffa500;
+    text-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  .credit-name {
+    font-size: 35px;
+    color: #d4af37;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+  }
+  
+  .credit-description {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.8;
+    margin-top: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .credit-thankyou {
+    font-size: 22px;
+    color: #d4af37;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  @keyframes fadeInCredit {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glowBtn {
+    0% {
+      box-shadow: 0 0 5px #7f5af0;
+    }
+    50% {
+      box-shadow: 0 0 20px #c3bef0;
+    }
+    100% {
+      box-shadow: 0 0 5px #7f5af0;
+    }
+  }
+  
+  .ant-btn-primary {
+    animation: glowBtn 2s infinite;
+    background-color: #6a4c93;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* --- Responsive Styles --- */
+  @media (max-width: 768px) {
+    .credit-container {
+      padding: 10px;
+    }
+  
+    .credit-content {
+      padding: 40px;
+    }
+  
+    .credit-title {
+      font-size: 18px;
+    }
+  
+    .credit-name {
+      font-size: 30px;
+    }
+  
+    .credit-description {
+      font-size: 18px;
+    }
+  
+    .credit-thankyou {
+      font-size: 20px;
+    }
+  
+    .ant-btn-primary {
+      font-size: 14px;
+      padding: 8px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .credit-container {
+      padding: 10px;
+    }
+  
+    .credit-content {
+      padding: 20px;
+    }
+  
+    .credit-title {
+      font-size: 16px;
+    }
+  
+    .credit-name {
+      font-size: 25px;
+    }
+  
+    .credit-description {
+      font-size: 16px;
+    }
+  
+    .credit-thankyou {
+      font-size: 18px;
+    }
+  
+    .ant-btn-primary {
+      font-size: 12px;
+      padding: 8px 20px;
+    }
+  }
+  

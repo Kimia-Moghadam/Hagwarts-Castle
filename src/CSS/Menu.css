@@ -1,0 +1,102 @@
+.menu-container {
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 10px;
+    padding: 30px 15px; 
+    color: white;
+    font-family: 'Garamond', serif; 
+    box-shadow: 0 0 15px rgba(255, 237, 203, 0.8); 
+    animation: fadeIn 1s ease-out; 
+  }
+  
+  .menu-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px; 
+  }
+  
+  .menu-container li {
+    margin: 30px 0; 
+    text-align: center;
+    padding-right: 40px;
+  }
+
+  .buton{
+    font-size:larger;
+    color: #ffa500;
+    cursor: pointer;
+  }
+  
+  .buton:hover{
+    color: rgb(245, 148, 2);
+    text-decoration: none;
+    font-size: 22px; 
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.7); 
+    transition: color 0.3s ease, transform 0.2s ease;
+
+  }
+  
+  .menu-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px; 
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.7);
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .menu-container a:hover {
+    color: #ffa500; 
+    transform: scale(1.1); 
+    text-shadow: 0 0 20px rgba(255, 165, 0, 1); 
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.menu-container {
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.menu-container.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-container.light {
+  background-color: #416b6d;
+  color: #000;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-container li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-container .theme-toggle {
+  display: flex;
+  align-items: center;
+}
